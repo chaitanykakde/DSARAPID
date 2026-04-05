@@ -1,8 +1,8 @@
 import java.util.*;
-class Main{
+class countNoOfZeroes{
     public static void main(String[] args) {
         
-         int count=countZeroes(10000);
+         int count=countZeroes(100000);
          System.err.println(count);
     }
     static int countZeroes(int n){
