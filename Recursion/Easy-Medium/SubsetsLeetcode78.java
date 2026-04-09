@@ -2,10 +2,10 @@ import java.util.*;
 
 class SubsetsLeetcode78{
     public static void main(String args[]){
-       int arr[]={5,5,5,5,2,3};
+       int arr[]={5,5,5,5,5};
        List<List<Integer>> ans=new ArrayList<>();
       ans.add(new ArrayList<>());
-       subsetsDuplicated(arr,0,ans);
+       subsetsDuplicated(arr,0,ans,0);
        System.out.println(ans);
     }
     static void subsets(int arr[],int index,List<List<Integer>> ans){
@@ -30,24 +30,29 @@ class SubsetsLeetcode78{
        }
     }        
 
-    static void subsetsDuplicated(int arr[],int index,List<List<Integer>> ans){
+    static void subsetsDuplicated(int arr[],int index,List<List<Integer>> ans ,int start){
         if(index==arr.length){
             return;
         }
         int size=ans.size();
-        
-       for(int i=index;i<size;i++){
-            if(i > index && arr[i] == arr[i-1]) continue;
-
-
+        int begin=0;
+        if(index>0 && arr[index]==arr[index-1]){
+            begin=start;
+        }
+        int newStart=size;
+       for(int i=begin;i<size;i++){
            List<Integer> temp=new ArrayList<>(ans.get(i));
             temp.add(arr[index]);
             ans.add(temp);
+
         }
-        subsetsDuplicated(arr, index+1, ans);
+
+        subsetsDuplicated(arr, index+1, ans,newStart);
+    }
+
     } 
 
-}
+
 
 
     

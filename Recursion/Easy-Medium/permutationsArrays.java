@@ -4,7 +4,7 @@ class permutationsArrays{
         int arr[]={1,2,3};
         List<List<Integer>> ans=new ArrayList<>();
         List<Integer> temp=new ArrayList<>();
-        permutationsArray(arr, ans,temp);
+        permutationsArray2(arr, ans,temp);
         System.out.print(ans);
         
 
@@ -44,6 +44,25 @@ class permutationsArrays{
             }
             temp.add(arr[i]);
             permutationsArray(arr, ans, temp);
+            temp.remove(temp.size()-1);
+        }
+     
+       
+      }
+
+
+      static void permutationsArray2(int arr[],List<List<Integer>> ans,List<Integer> temp){
+       
+        if(temp.size()==arr.length){
+           ans.add(new ArrayList<>(temp));
+           return;
+        }
+        for(int i=0;i<arr.length;i++){
+            if(temp.contains(arr[i])){
+                continue;
+            }
+            temp.add(arr[i]);
+            permutationsArray2(arr, ans, temp);
             temp.remove(temp.size()-1);
         }
      
