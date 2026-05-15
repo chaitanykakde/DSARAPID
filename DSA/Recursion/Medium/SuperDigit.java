@@ -8,7 +8,7 @@ class SuperDigit{
        
 
         //find sum
-        int sum=0;
+        long sum=0;
         for(int i=0;i<n.length();i++){
               sum+=n.charAt(i)-'0';
         }
@@ -16,7 +16,7 @@ class SuperDigit{
         //multiply the sum with k
         sum=sum*k;
         
-        return getDigit(Integer.toString(sum));
+        return getDigit(Long.toString(sum));
     }
 
     public static int getDigit(String n){
