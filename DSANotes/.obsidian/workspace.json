@@ -244,9 +244,65 @@
               "icon": "lucide-file",
               "title": "FirstNegetiveinEachWindow"
             }
+          },
+          {
+            "id": "0076419116b2e9b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maths/Divisors.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Divisors"
+            }
+          },
+          {
+            "id": "459b9763d79a1169",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Arrays/FirstNegetiveinEachWindow.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "FirstNegetiveinEachWindow"
+            }
+          },
+          {
+            "id": "8ec4a5588dcec859",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maths/GCD & LCM.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "GCD & LCM"
+            }
+          },
+          {
+            "id": "e6ed74927b7f41ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maths/01_Binary_And_Bit_Manipulation/part1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "part1"
+            }
           }
         ],
-        "currentTab": 16
+        "currentTab": 20
       }
     ],
     "direction": "vertical"
@@ -408,32 +464,44 @@
       "bases:Create new base": false
     }
   },
-  "active": "15d0f098707bccbb",
+  "active": "e6ed74927b7f41ad",
   "lastOpenFiles": [
+    "Maths/Math RoadMap.md",
+    "Maths/01_Binary_And_Bit_Manipulation/part1.md",
+    "Maths/15_Mixed_Problem_Solving",
+    "Maths/14_Revision_And_Cheat_Sheets",
+    "Maths/13_CP_Math_Templates",
+    "Maths/12_Advanced_CP_Math",
+    "Maths/11_Game_Theory_Basics",
+    "Maths/10_Linear_Algebra_And_Vectors",
+    "Maths/09_Prefix_Math_And_XOR",
+    "Maths/08_Floor_Ceil_And_Integer_Math",
+    "Maths/07_Logarithms_And_Exponents",
+    "Maths/06_Mathematical_Observations",
+    "Maths/GCD & LCM.md",
+    "Arrays/FirstNegetiveinEachWindow.md",
+    "Arrays/MaximumSubarraySum.md",
     "Arrays/Trapped Rain Water.md",
     "Arrays/UnionOf2SortedArrays.md",
-    "Arrays/MaximumSubarraySumOf Size K.md",
-    "Arrays/FirstNegetiveinEachWindow.md",
     "Arrays/MaximumProductSubarray.md",
-    "Arrays/MaximumSubarraySum.md",
-    "Recursion/SuperDigit.md",
-    "Arrays",
+    "Maths/PRIME NUMBERS FROM 1 TO N.md",
     "Recursion/Power Sum.md",
+    "Recursion/SuperDigit.md",
+    "Recursion/myPow.md",
+    "Recursion/Kth Bit In Grammer.md",
+    "Recursion/Increasing Numbers.md",
+    "Recursion/Count Good Numbers.md",
+    "Recursion/1969. Minimum Non-Zero Product of the Array Elements.md",
+    "Maths/Divisors.md",
+    "Arrays/MaximumSubarraySumOf Size K.md",
     "Recursion/HANDSHAKES THAT DON'T CROSS.md",
     "Recursion/Binary Exponentiation.md",
-    "Recursion/1969. Minimum Non-Zero Product of the Array Elements.md",
     "Math/Modulo.md",
-    "Recursion/Increasing Numbers.md",
-    "Recursion/Kth Bit In Grammer.md",
-    "Recursion/Count Good Numbers.md",
-    "Recursion/myPow.md",
     "Pasted image 20260510154037.png",
     "Screenshot 2026-05-10 at 3.38.02 PM.png",
     "Screenshot 2026-05-10 at 3.35.09 PM.png",
     "Screenshot 2026-05-10 at 3.27.10 PM.png",
     "Screenshot 2026-05-10 at 3.24.36 PM.png",
-    "Math",
-    "Pasted image 20260510122645.png",
-    "Recursion"
+    "Pasted image 20260510122645.png"
   ]
 }
