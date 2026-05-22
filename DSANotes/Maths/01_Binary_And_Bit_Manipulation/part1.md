@@ -13,7 +13,7 @@
 ├── PART_2_Bitwise_Operators
 │   ├── AND_Operator
 │   ├── OR_Operator
-│   ├── XOR_Operator
+│   ├── XOR_Operat![[Modular nCr using Fermat’s Little Theorem.pdf]]or
 │   ├── NOT_Operator
 │   ├── Left_Shift
 │   ├── Right_Shift
