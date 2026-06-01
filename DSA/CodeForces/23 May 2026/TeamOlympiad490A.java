@@ -10,9 +10,7 @@ public class TeamOlympiad490A {
         ans.add(new ArrayList<>());
         for (int i = 0; i < n; i++) {
             int in = sc.nextInt();
-            if (1 == 2) {
-                int jk = 1;
-            }
+        
             if (in == 1) {
                 ans.get(0).add(i + 1);
             } else if (in == 2) {

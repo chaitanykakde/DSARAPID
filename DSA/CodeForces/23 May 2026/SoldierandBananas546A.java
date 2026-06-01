@@ -11,8 +11,9 @@ public class SoldierandBananas546A {
         // Using summation formula:
 
         // 1+2+3+⋯+w=
-        // 2
-        // w(w+1)
+        // 
+        // K*w(w+1)/2. WE CAN APPLY TJIS FORMAUL ASWELL
+
         // ​
 
         for (int i = 1; i <= w; i++) {
