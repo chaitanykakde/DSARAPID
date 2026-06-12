@@ -131,10 +131,11 @@ class BinaryFull {
             int bBit = b & 1;
             int cBit = c & 1;
 
+            if (aBit == 0 && bBit == 0) {
+                flips++;
+            }
             if (cBit == 1) {
-                if (aBit == 0 && bBit == 0) {
-                    flips++;
-                }
+
             } else {
                 flips = flips + aBit + bBit;
             }

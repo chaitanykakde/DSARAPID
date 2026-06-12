@@ -307,6 +307,13 @@ class NumberTheoryFull {
         return sum;
     }
 
+    public static int getGcd(int a, int b) {
+        if (b == 0) {
+            return a;
+        }
+        return getGcd(b, a % b);
+    }
+
     public static int sumOfDivisorsMathFormula(int n) {
         int sum = 1;
         for (int i = 2; i * i <= n; i++) {
@@ -359,7 +366,8 @@ class NumberTheoryFull {
         // 99));
         // System.out.println("Divisor Count:" + DivisorCount(14));
         // System.out.println(sumOfDivisorsMathFormula(360));
-        System.out.println(getSortedDivisors(36));
+        // System.out.println(getSortedDivisors(36));
+        System.out.println(getGcd(30, 20));
 
     }
 

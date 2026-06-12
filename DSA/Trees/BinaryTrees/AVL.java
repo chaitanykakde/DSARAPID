@@ -238,12 +238,12 @@ public class AVL {
         // avl.insert(16);
         // avl.prettyDisplay();
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 10; i++) {
             avl.insert(i);
         }
 
         System.out.println(avl.height(avl.root));
-
+        avl.display();
     }
 
 }

@@ -349,12 +349,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Arrays/FirstNegetiveinEachWindow.md",
+                "file": "Maths/01_Binary_And_Bit_Manipulation/BIT MANIPULATION.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FirstNegetiveinEachWindow"
+              "title": "BIT MANIPULATION"
             }
           }
         ],
@@ -522,16 +522,16 @@
   },
   "active": "233e212027f68526",
   "lastOpenFiles": [
-    "Arrays/MaximumSubarraySum.md",
+    "Modular nCr using Fermat’s Little Theorem.pdf",
     "Arrays/UnionOf2SortedArrays.md",
-    "Arrays/MaximumSubarraySumOf Size K.md",
     "Arrays/FirstNegetiveinEachWindow.md",
+    "Arrays/MaximumSubarraySum.md",
+    "Arrays/MaximumSubarraySumOf Size K.md",
     "Maths/04_Combinatorics/Combinatrix.md",
     "Maths/03_Modular_Arithmetic/Modular Arithmetic.md",
     "Maths/02_Number_Theory/Number theory.md",
     "Maths/01_Binary_And_Bit_Manipulation/BIT MANIPULATION.md",
     "Maths/01_Binary_And_Bit_Manipulation/part1.md",
-    "Modular nCr using Fermat’s Little Theorem.pdf",
     "Maths/Math RoadMap.md",
     "Maths/15_Mixed_Problem_Solving",
     "Maths/14_Revision_And_Cheat_Sheets",
