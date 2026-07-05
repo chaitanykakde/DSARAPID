@@ -1,0 +1,9 @@
+version: 1
+boundaries:
+  # Example generic boundaries
+  - name: Domain
+    paths: ["internal/domain/**"]
+    allowed_imports: [] # Domain should be isolated
+  - name: App
+    paths: ["internal/app/**"]
+    allowed_imports: ["internal/domain"]

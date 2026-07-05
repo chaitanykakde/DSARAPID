@@ -190,9 +190,9 @@ public class BasicDP {
         if (dp[index] != -1) {
             return dp[index];
         }
-        int pick = (index - 2 >= 0) ? rob(nums, index - 2, dp) + nums[index] : nums[index];
+        int pick = (index - 2 >= 0) ? rob1(nums, index - 2, dp) + nums[index] : nums[index];
 
-        int nonPick = rob(nums, index - 1, dp) + 0;
+        int nonPick = rob1(nums, index - 1, dp) + 0;
         return dp[index] = Math.max(pick, nonPick);
     }
 

@@ -108,6 +108,37 @@ public class DP2D {
         return dp[m][n] = count;
     }
 
+    public static int uniquePathsTab(int m, int n) {
+
+        int[][] dp = new int[m][n];
+
+        dp[0][0] = 1;
+
+        for (int i = 0; i < m; i++) {
+
+            for (int j = 0; j < n; j++) {
+                int count = 0;
+
+                if (i == 0 && j == 0)
+                    continue;
+
+                int up = 0;
+                int left = 0;
+
+                if (i > 0)
+                    up = dp[i - 1][j];
+
+                if (j > 0)
+                    left = dp[i][j - 1];
+
+                dp[i][j] = up + left;
+
+            }
+        }
+
+        return dp[m - 1][n - 1];
+    }
+
     // 63. Unique Paths II
     // Medium
     // Topics
@@ -135,7 +166,7 @@ public class DP2D {
         for (int[] x : dp) {
             Arrays.fill(x, -1);
         }
-        return uniquePathsWithObstacles(obstacleGrid, m - 1, n - 1, dp);
+        return uniquePathsWithObstaclesTab(obstacleGrid, m, n);
 
     }
 
@@ -161,6 +192,43 @@ public class DP2D {
         count += uniquePathsWithObstacles(obstacleGrid, m, n - 1, dp);
 
         return dp[m][n] = count;
+    }
+
+    public int uniquePathsWithObstaclesTab(int[][] obstacleGrid) {
+        int m = obstacleGrid.length;
+        int n = obstacleGrid[0].length;
+
+        return uniquePathsWithObstaclesTab(obstacleGrid, m, n);
+
+    }
+
+    public static int uniquePathsWithObstaclesTab(int[][] obstacleGrid, int m, int n) {
+        int[][] dp = new int[m][n];
+
+        dp[0][0] = 1;
+
+        for (int i = 0; i < m; i++) {
+
+            for (int j = 0; j < n; j++) {
+
+                if (obstacleGrid[i][j] == 1) {
+                    dp[i][j] = 0;
+                } else if (i == 0 && j == 0) {
+                    dp[i][j] = 1;
+                } else {
+                    // apply all stuffs on index
+                    int count = 0;
+                    if (i > 0)
+                        count += dp[i - 1][j];
+                    if (j > 0)
+                        count += dp[i][j - 1];
+
+                    dp[i][j] = count;
+
+                }
+            }
+        }
+        return dp[m - 1][n - 1];
     }
 
     // 64. Minimum Path Sum
@@ -200,6 +268,29 @@ public class DP2D {
         int left = minPathSum(grid, m - 1, n, dp);
 
         return dp[m][n] = grid[m][n] + Math.min(up, left);
+    }
+
+    public int minPathSumTab(int[][] grid, int m, int n, int[][] dp) {
+        dp[0][0] = grid[0][0];
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+
+                if (i == 0 && j == 0) {
+                    continue;
+                }
+                int up = (int) 1e9;
+                int left = (int) 1e9;
+                if (j > 0)
+                    up = dp[i][j - 1];
+                if (i > 0)
+                    left = dp[i - 1][j];
+
+                dp[i][j] = grid[i][j] + Math.min(up, left);
+
+            }
+        }
+        return dp[m - 1][n - 1];
     }
 
     // 120. Triangle
